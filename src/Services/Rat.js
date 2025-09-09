@@ -62,7 +62,7 @@ export default function RatControlPage() {
         </div>
 
         {/* Content */}
-        <div className="relative flex flex-col lg:flex-row p-6 py-24 max-w-7xl mx-auto">
+        <div className="relative flex flex-col lg:flex-row p-6 py-28 max-w-7xl mx-auto">
           {/* Left Content */}
           <div className="lg:w-2/3 lg:pr-8 text-gray-600 ">
             <header className="mb-6">
@@ -220,6 +220,10 @@ export default function RatControlPage() {
               >
                 Book Now
               </button>
+                 {/* T&C note */}
+    <p className="text-sm text-gray-800 mt-2 text-center">
+      *Terms & Conditions apply
+    </p>
             </form>
           </div>
         </div>

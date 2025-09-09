@@ -1,31 +1,42 @@
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import Footer from "./Footer";
 import Navbar from './Homepage';
+import contactme from "../Images/contactme.jpg";
 export default function ContactUs() {
   return (
     <>
     <Navbar />
+
+     <section className=" py-40 mt-16 inset-0 bg-cover bg-center"  style={{ backgroundImage: `url(${contactme})`, opacity:0.6 }} >
+            <div className="container mx-auto px-6 text-center">
+              {/* <h1 className="text-5xl font-extrabold mb-4">About Us</h1>
+              <p className="text-lg max-w-2xl text-gray-200 mx-auto">
+                Trusted, Eco-Friendly, and Professional Pest Control Solutions at Your Service.
+              </p> */}
+            </div>
+          </section>
+
     <div className="bg-gray-50 text-gray-800 py-20 px-6">
       {/* Contact Header */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-2">Contact Us</h1>
-        <p className="text-lg">For Booking, Complaints & Inquiries</p>
+        <h1 className="text-2xl font-bold mb-2">For Booking, Complaints & Inquiries</h1>
+        {/* <p className="text-lg">For Booking, Complaints & Inquiries</p> */}
       </div>
 
       {/* Contact Details */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center mb-12">
-        <div>
+      <div className="grid grid-cols-1 md:grid-cols-3  text-center mb-12">
+        <div className="bg-none p-5 text-center ">
           <FaPhoneAlt className="text-3xl mx-auto text-blue-600 mb-2" />
           <h3 className="font-bold">Customer Care</h3>
           <p className="text-lg mt-1">📞 8707727951</p>
         </div>
-        <div>
+        <div className="bg-none p-5 text-center">
           <FaEnvelope className="text-3xl mx-auto text-red-500 mb-2" />
           <h3 className="font-bold">Email Us at</h3>
           <p className="text-sm">patelbrospest@gmail.com</p>
      
         </div>
-        <div>
+        <div className="bg-none p-5 text-center">
           <FaMapMarkerAlt className="text-3xl mx-auto text-green-500 mb-2" />
           <h3 className="font-bold">Registered Head Office</h3>
           <p className="text-sm mt-1">

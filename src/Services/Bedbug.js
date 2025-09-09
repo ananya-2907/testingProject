@@ -49,7 +49,7 @@ export default function BedBugControlPage() {
   return (
     <>
        <Navbar />
-      <div className="relative flex flex-col lg:flex-row py-24 p-6 max-w-7xl mx-auto">
+      <div className="relative flex flex-col lg:flex-row py-28 p-6 max-w-7xl mx-auto">
   {/* Background image with opacity */}
   <div
     className="absolute inset-0 bg-cover bg-center"
@@ -144,7 +144,7 @@ export default function BedBugControlPage() {
       </footer>
     </div>
 
-    {/* Booking Form (unchanged) */}
+    {/* Booking Form */}
     <div className="lg:w-1/3 relative top-4 h-fit bg-gray-50 p-6 rounded shadow-[0_4px_20px_rgba(34,197,94,0.4)] border">
       <h2 className="text-2xl font-semibold mb-4">Booking Form</h2>
       <form ref={form} onSubmit={handleSubmit} className="space-y-4">
@@ -212,8 +212,13 @@ export default function BedBugControlPage() {
         >
           Book Now
         </button>
+        {/* T&C note */}
+    <p className="text-sm text-gray-800 mt-2 text-center">
+      *Terms & Conditions apply
+    </p>
       </form>
     </div>
+
   </div>
 </div>
 

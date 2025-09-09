@@ -9,7 +9,7 @@ function AboutUs() {
      >
       <Navbar />
       {/* Hero Section */}
-      <section className="bg-cover py-32 bg-center text-white p-24"  style={{ backgroundImage: `url(${about})` }} >
+      <section className="bg-cover py-40 bg-center text-white"  style={{ backgroundImage: `url(${about})` }} >
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-5xl font-extrabold mb-4">About Us</h1>
           <p className="text-lg max-w-2xl text-gray-200 mx-auto">
@@ -21,7 +21,7 @@ function AboutUs() {
       {/* Introduction */}
       <section className="container mx-auto px-6 py-12">
         <div className="bg-white p-8">
-          <h2 className="text-2xl font-bold text-blue-800 mb-4">Who We Are?</h2>
+          <h2 className="text-xl font-bold text-blue-800 mb-3">Who We Are?</h2>
           <p className="leading-relaxed text-gray-800">
             At <strong>HS PatelBros Pest Services Pvt. Ltd.</strong>, we are committed to creating pest-free, hygienic, and safe environments for homes and businesses. Our certified experts use advanced techniques and government-approved eco-friendly solutions that are safe for children, pets, and the environment. Whether it’s ants, cockroaches, termites, bed bugs, or rodents, we provide reliable treatments that ensure long-lasting results.
 
@@ -35,6 +35,7 @@ Choose HS PatelBros Pest Services today and experience the difference of expert 
       </section>
 
       {/* Why Choose Us */}
+
       <section className="bg-gray-50 py-20">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-black text-center mb-12">Why Choose Us</h2>
@@ -45,7 +46,7 @@ Choose HS PatelBros Pest Services today and experience the difference of expert 
               ["Trained Experts", "Professionally trained, background-verified technicians."],
               ["Transparent Pricing", "Fair One-Nation-One-Price policy across all locations."]
             ].map(([title, desc], index) => (
-              <div key={index} className="bg-white p-6 rounded-lg hover:shadow-[0_4px_20px_rgba(34,197,94,0.4)] transition">
+              <div key={index} className="bg-white p-6 rounded-full text-center shadow-[0_4px_20px_rgba(34,197,94,0.4)]">
                 <h3 className="font-bold text-lg text-blue-800">{title}</h3>
                 <p className="text-gray-700 mt-2 text-sm">{desc}</p>
               </div>
@@ -66,7 +67,7 @@ Choose HS PatelBros Pest Services today and experience the difference of expert 
             ["Bed Bug Treatment", "Eliminate bed bugs and restore peace of mind."],
             ["Bird Netting Solutions", "Safe netting solutions to prevent bird intrusion."]
           ].map(([title, desc], index) => (
-            <div key={index} className="border p-6 rounded-lg hover:shadow-[0_4px_20px_rgba(34,197,94,0.4)] bg-white transition-transform">
+            <div key={index} className=" bg-white p-6 rounded-full text-center shadow-[0_4px_20px_rgba(34,197,94,0.4)]">
               <h3 className="text-xl font-bold text-blue-800">{title}</h3>
               <p className="mt-2 text-sm text-gray-700">{desc}</p>
             </div>
@@ -79,13 +80,13 @@ Choose HS PatelBros Pest Services today and experience the difference of expert 
         <div className="bg-green-50 p-8">
           <h2 className="text-4xl font-bold text-black mb-4">Meet Our CEO</h2>
           <p className="text-gray-700 mb-4">
-            <strong>Shubham Patel</strong> (B.Sc and M.Sc in Zoology) is a seasoned professional with extensive experience in the pest control industry. With a passion for delivering exceptional customer service and a commitment to innovation, <strong>We</strong> leads <strong>HS PATELBROS Pest Services</strong> with a vision to provide effective, eco-friendly, and customer-centric pest control solutions.
+            <span className='text-blue-800 font-bold'>Shubham Patel</span> (B.Sc and M.Sc in Zoology) is a seasoned professional with extensive experience in the pest control industry. With a passion for delivering exceptional customer service and a commitment to innovation, <strong>We</strong> leads <strong>HS PATELBROS Pest Services</strong> with a vision to provide effective, eco-friendly, and customer-centric pest control solutions.
           </p>
           <p className="text-gray-700 mb-4">
-            Under <strong>Shubham Patel</strong>'s leadership, the company has established itself as a trusted partner for homes and businesses seeking reliable pest control services.
+            Under <span className='text-blue-800 font-bold'>Shubham Patel</span>'s leadership, the company has established itself as a trusted partner for homes and businesses seeking reliable pest control services.
           </p>
           <h3 className="text-xl font-semibold text-black mt-6 mb-2">Message from the CEO:</h3>
-          <blockquote className="italic border-l-4 border-green-500 pl-4 text-gray-700">
+          <blockquote className="italic border-l-4 border-green-700 pl-4 font-semibold text-gray-700">
             “At HS PATELBROS Pest Services, we're driven by a simple yet powerful mission: to protect our customers' homes and businesses from pests while promoting a healthier environment. As CEO, I'm proud to lead a team of dedicated professionals who share this vision and are committed to delivering exceptional service and results. We're honored to serve our community and look forward to continuing to innovate and improve our services to meet the evolving needs of our customers.”
           </blockquote>
           {/* <p className="mt-4 text-gray-600"><strong>Qualifications:</strong> B.Sc and M.Sc in Zoology</p> */}

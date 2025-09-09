@@ -49,7 +49,7 @@ export default function MosquitoControlPage() {
   return (
     <>
       <Navbar />
-      <div className="relative flex flex-col lg:flex-row py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div className="relative flex flex-col lg:flex-row py-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         {/* Background image with opacity */}
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -205,6 +205,10 @@ export default function MosquitoControlPage() {
               >
                 Book Now
               </button>
+                 {/* T&C note */}
+    <p className="text-sm text-gray-800 mt-2 text-center">
+      *Terms & Conditions apply
+    </p>
             </form>
           </div>
         </div>

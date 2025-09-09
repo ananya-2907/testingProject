@@ -43,7 +43,7 @@ export default function WoodBorerPage() {
       <Navbar />
 
       {/* Background wrapper */}
-      <div className="relative py-24 px-6">
+      <div className="relative py-28 px-6">
         {/* Background Image Layer */}
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -198,6 +198,10 @@ export default function WoodBorerPage() {
               >
                 Book Now
               </button>
+                 {/* T&C note */}
+    <p className="text-sm text-gray-800 mt-2 text-center">
+      *Terms & Conditions apply
+    </p>
             </form>
           </div>
         </div>

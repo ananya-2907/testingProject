@@ -90,17 +90,17 @@ export default function Homepage() {
       <section className="py-16 bg-gray-50 text-center">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-800 mb-5 sm:mb-0">Why Choose Us?</h2>
         <div className="mt-16 flex flex-wrap cursor-pointer justify-center gap-16 ">
-          <div className="p-12 w-72  bg-gray-100 rounded-lg hover:shadow-[0_4px_20px_rgba(34,197,94,0.5)] transform transition-transform duration-300 hover:scale-105">
+          <div className="p-12 w-72  bg-gray-100 rounded-lg shadow-[0_4px_20px_rgba(34,197,94,0.5)] transform transition-transform duration-300 hover:scale-105">
             <FaShieldAlt className="text-5xl text-blue-500 mx-auto" />
             <h3 className="font-bold mt-3">Certified & Safe</h3>
             <p className="text-gray-500">We use eco-friendly and approved pest control techniques.</p>
           </div>
-          <div className="p-12 w-72  bg-gray-100 hover:shadow-[0_4px_20px_rgba(34,197,94,0.5)] rounded-lg transform transition-transform duration-300 hover:scale-105">
+          <div className="p-12 w-72  bg-gray-100 shadow-[0_4px_20px_rgba(34,197,94,0.5)] rounded-lg transform transition-transform duration-300 hover:scale-105">
             <FaBug className="text-5xl text-red-500 mx-auto" />
             <h3 className="font-bold mt-3">Expert Solutions</h3>
             <p className="text-gray-500">Trained professionals to eliminate all types of pests.</p>
           </div>
-          <div className="p-12 w-72  bg-gray-100  hover:shadow-[0_4px_20px_rgba(34,197,94,0.5)] rounded-lg transform transition-transform duration-300 hover:scale-105">
+          <div className="p-12 w-72  bg-gray-100 shadow-[0_4px_20px_rgba(34,197,94,0.5)] rounded-lg transform transition-transform duration-300 hover:scale-105">
             <FaLeaf className="text-5xl text-green-500 mx-auto" />
             <h3 className="font-bold mt-3">Eco-Friendly</h3>
             <p className="text-gray-500">We prioritize the environment with non-toxic treatments.</p>
@@ -258,7 +258,7 @@ export default function Homepage() {
       {/* Testimonial Cards */}
       <div className="mt-12 grid gap-8 md:grid-cols-3 max-w-6xl mx-auto px-6">
         {/* Card 1 */}
-        <div className="bg-white p-6 rounded-xl hover:shadow-[0_4px_20px_rgba(34,197,94,0.8)] transition duration-300">
+        <div className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(34,197,94,0.8)] transition duration-300">
           <FaQuoteLeft className="text-yellow-400 text-2xl mx-auto" />
           <p className="mt-4 text-gray-700 italic">
            “Professional and trustworthy pest control experts. They worked neatly, on time, and gave me complete peace of mind.”
@@ -274,7 +274,7 @@ export default function Homepage() {
         </div>
 
         {/* Card 2 */}
-        <div className="bg-white p-6 rounded-xl hover:shadow-[0_4px_20px_rgba(34,197,94,0.8)] transition duration-300">
+        <div className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(34,197,94,0.8)] transition duration-300">
           <FaQuoteLeft className="text-yellow-400 text-2xl mx-auto" />
           <p className="mt-4 text-gray-700 italic">
            “Excellent service! The team explained every step, used safe chemicals, and delivered results that really last.”
@@ -290,7 +290,7 @@ export default function Homepage() {
         </div>
 
         {/* Card 3 */}
-        <div className="bg-white p-6 rounded-xl hover:shadow-[0_4px_20px_rgba(34,197,94,0.8)] transition duration-300">
+        <div className="bg-white p-6 rounded-xl shadow-[0_4px_20px_rgba(34,197,94,0.8)] transition duration-300">
           <FaQuoteLeft className="text-yellow-400 text-2xl mx-auto" />
           <p className="mt-4 text-gray-700 italic">
            “HS PatelBros Pest Services responded quickly and handled the problem with great care. My wooden furniture is safe again, and I no longer worry about pests.”
@@ -324,18 +324,8 @@ export default function Homepage() {
     
      
       </div>
-    </section>
 
-      {/* Contact Section */}
-      {/* <section className="bg-[#3ad473] text-black text-center py-12">
-        <h2 className="text-3xl font-bold">Get in Touch</h2>
-        <p className="mt-2">Need help? Contact us today!</p>
-        <p className="mt-2 font-bold">📞 8707727951</p>
-        <p className="mt-2">📧 patelbrospest@gmail.com</p>
-        <Link to="/contactus" className="mt-4 inline-block bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700">
-          Contact Us
-        </Link>
-      </section> */}
+    </section>
     </div>
   );
 }
