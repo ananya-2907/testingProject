@@ -16,16 +16,20 @@ export default function Footer() {
             <li><Link to="/Services/Woodwork" className="hover:text-gray-400">Wood Borer</Link></li>
             <li><Link to="/Services/Rat" className="hover:text-gray-400">Rodent Control</Link></li>
           </ul>
-     <div className="flex items-center mt-6">
+
+          
+<div className="flex items-center mt-4 sm:mt-6 gap-2 sm:gap-3">
   <img
-    src={logo} // replace with your logo path
+    src={logo}
     alt="Logo"
-    className="h-6 w-6 object-contain"
-  /> 
-     <p className="hover:text-gray-400 font-bold text-sm">
-     HS PATEL BROS PEST SERVICES PVT LTD
+    className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 object-contain"
+  />
+  <p className="font-bold whitespace-nowrap text-xs sm:text-sm md:text-base lg:text-lg hover:text-gray-400">
+    HS PATEL BROS PEST SERVICES PVT LTD
   </p>
 </div>
+
+
 
         </div>
 

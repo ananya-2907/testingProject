@@ -64,12 +64,12 @@ export default function RatControlPage() {
         {/* Content */}
         <div className="relative flex flex-col lg:flex-row p-6 py-24 max-w-7xl mx-auto">
           {/* Left Content */}
-          <div className="lg:w-2/3 lg:pr-8 text-white lg:text-gray-900">
+          <div className="lg:w-2/3 lg:pr-8 text-gray-600 ">
             <header className="mb-6">
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-4 sm:mb-0 text-green-800">
                 Rat & Rodent Control - Patel Bros
               </h1>
-              <p className="mt-3 text-gray-100 lg:text-gray-600">
+              <p className="mt-3 text-gray-600 ">
                 Protect your home from health hazards and damage caused by rats
                 and rodents.
               </p>
@@ -79,7 +79,7 @@ export default function RatControlPage() {
               <h2 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4 sm:mb-0 text-black">
                 Why Book Rat Control Services?
               </h2>
-              <ul className="list-disc ml-6 mt-3 text-gray-100 lg:text-gray-700 space-y-1">
+              <ul className="list-disc ml-6 mt-3 text-gray-600  space-y-1">
                 <li>Protects food storage from contamination</li>
                 <li>Reduces spread of rat-borne diseases</li>
                 <li>Eliminates property and wire damage</li>
@@ -89,7 +89,7 @@ export default function RatControlPage() {
 
             <section className="mb-6">
               <h2 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4 sm:mb-0 text-black">When to Book?</h2>
-              <ul className="list-disc ml-6 mt-3 text-gray-100 lg:text-gray-700 space-y-1">
+              <ul className="list-disc ml-6 mt-3 text-gray-600 space-y-1">
                 <li>Scratchy sounds in walls or ceiling</li>
                 <li>Rodent droppings around kitchen/storage</li>
                 <li>Chewed packaging or wires</li>
@@ -129,7 +129,7 @@ export default function RatControlPage() {
 
             <section className="mb-6">
               <h2 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4 sm:mb-0 text-black">How We Work</h2>
-              <ol className="list-decimal ml-6 mt-3 text-gray-100 lg:text-gray-700 space-y-1">
+              <ol className="list-decimal ml-6 mt-3 text-gray-600  space-y-1">
                 <li>Inspection for rodent entry points and nests</li>
                 <li>Baiting and trapping using secure methods</li>
                 <li>Installation of rodent-proof stations (if required)</li>
@@ -139,7 +139,7 @@ export default function RatControlPage() {
 
             <section className="mb-6">
               <h2 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4 sm:mb-0 text-black">Terms and Conditions</h2>
-              <p className="text-gray-100 mt-3 lg:text-gray-700">
+              <p className="text-gray-600 mt-3">
                 Customers must ensure cleanliness and remove food waste. Results
                 may vary based on sanitation conditions.
               </p>

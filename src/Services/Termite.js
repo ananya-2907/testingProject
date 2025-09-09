@@ -53,12 +53,12 @@ export default function TermitePage() {
         {/* Content */}
         <div className="relative flex flex-col lg:flex-row p-6 py-24 max-w-7xl mx-auto">
           {/* Left Content */}
-          <div className="lg:w-2/3 lg:pr-8 text-white lg:text-gray-900">
+          <div className="lg:w-2/3 lg:pr-8">
             <header className="mb-6">
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-4 sm:mb-0 text-green-800">
                 Termite Repellent Pest Control
               </h1>
-              <p className="mt-3 text-gray-100 lg:text-gray-600">
+              <p className="mt-3 text-gray-600">
                 Safeguard your property from silent structural damage with
                 Patelbros expert Termite Control services.
               </p>
@@ -68,7 +68,7 @@ export default function TermitePage() {
               <h2 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4 sm:mb-0 text-black">
                 Why Book Termite Control Services?
               </h2>
-              <ul className="list-disc ml-6 mt-3 text-gray-100 lg:text-gray-700 space-y-1">
+              <ul className="list-disc ml-6 mt-3 text-gray-600  space-y-1">
                 <li>Early detection to prevent irreversible wood damage</li>
                 <li>Long-term protection with industry-grade solutions</li>
                 <li>Prevents costly repairs and home resale value loss</li>
@@ -79,7 +79,7 @@ export default function TermitePage() {
 
             <section className="mb-6">
               <h2 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4 sm:mb-0 text-black">When to Book?</h2>
-              <ul className="list-disc ml-6 mt-3 text-gray-100 lg:text-gray-700 space-y-1">
+              <ul className="list-disc ml-6 mt-3 text-gray-600 space-y-1">
                 <li>Hollow-sounding wood</li>
                 <li>Presence of mud tubes on walls or furniture</li>
                 <li>Peeling paint that looks like water damage</li>
@@ -119,7 +119,7 @@ export default function TermitePage() {
 
             <section className="mb-6">
               <h2 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4 sm:mb-0 text-black">How We Work</h2>
-              <ol className="list-decimal ml-6 mt-3 text-gray-100 lg:text-gray-700 space-y-1">
+              <ol className="list-decimal ml-6 mt-3 text-gray-600 space-y-1">
                 <li>Inspection of infected and at-risk areas</li>
                 <li>Drilling holes near wooden bases & walls</li>
                 <li>Injecting anti-termite chemicals safely</li>
@@ -131,7 +131,7 @@ export default function TermitePage() {
               <h2 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4 sm:mb-0 text-black">
                 Terms and Conditions
               </h2>
-              <p className="text-gray-100 lg:text-gray-700 mt-3">
+              <p className="text-gray-600 mt-3">
                 Warranty is valid only when post-treatment instructions are
                 followed. Re-inspection required every 6 months for Pro package.
               </p>
