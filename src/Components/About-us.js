@@ -22,8 +22,8 @@ function AboutUs() {
       <section className="container mx-auto px-6 py-12">
         <div className="bg-white p-8">
           <h2 className="text-2xl font-bold text-blue-800 mb-4">Who We Are?</h2>
-          <p className="leading-relaxed text-gray-600">
-            At <strong>HS PatelBros Pest Services</strong>, we are committed to creating pest-free, hygienic, and safe environments for homes and businesses. Our certified experts use advanced techniques and government-approved eco-friendly solutions that are safe for children, pets, and the environment. Whether it’s ants, cockroaches, termites, bed bugs, or rodents, we provide reliable treatments that ensure long-lasting results.
+          <p className="leading-relaxed text-gray-800">
+            At <strong>HS PatelBros Pest Services Pvt. Ltd.</strong>, we are committed to creating pest-free, hygienic, and safe environments for homes and businesses. Our certified experts use advanced techniques and government-approved eco-friendly solutions that are safe for children, pets, and the environment. Whether it’s ants, cockroaches, termites, bed bugs, or rodents, we provide reliable treatments that ensure long-lasting results.
 
 We specialize in both residential and commercial pest control, offering customized plans to meet the unique needs of every client. From detailed inspections and effective treatments to preventive care and follow-up checks, we follow a step-by-step process to deliver complete peace of mind. Our team is trained to handle even the toughest infestations with professionalism, ensuring that your property remains safe, clean, and pest-free.
 
@@ -98,10 +98,10 @@ Choose HS PatelBros Pest Services today and experience the difference of expert 
           <h2 className="text-3xl font-bold mb-4">Let’s Get in Touch</h2>
           <p className="mb-6 font-bold text-gray-600">Reach out to us for inspections, queries, or customized pest control plans.</p>
           <div className="space-y-2 text-sm">
-            <p><strong>📍 Address:</strong>225/A2, Behind Suti Mill, Power house Gwalior road, Jhansi-284001</p>
+            <p><strong>📍 Address:</strong> 225/A2, Behind Suti Mill, Power house Gwalior road, Jhansi-284001</p>
             <p><strong>📞 Call Us:</strong>8707727951</p>
             <p><strong>📧 Email:</strong> patelbrospest@gmail.com</p>
-            <p><strong>🌐 Website:</strong>####</p>
+            {/* <p><strong>🌐 Website:</strong>####</p> */}
           </div>
         </div>
       </section>

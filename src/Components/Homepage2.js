@@ -61,7 +61,7 @@ export default function Homepage() {
           src={img}
           alt="Slide"
           className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity  duration-3000 ${
-            index === currentIndex ? "opacity-55 z-10" : "opacity-0 z-0"
+            index === currentIndex ? "opacity-50 z-10" : "opacity-0 z-0"
           }`}
         />
       ))}
@@ -69,7 +69,7 @@ export default function Homepage() {
       {/* Overlay Content */}
       <div className="absolute z-20 w-full text-center text-white px-6">
         <h1 className="text-4xl md:text-6xl font-bold">Safe & Effective <span className="text-[#e8c34e]">Pest Control</span></h1>
-        <p className="text-lg mt-4">Protect your home & business with our expert pest control services.</p>
+        <p className="text-lg mt-4">Protect your home & business with our expert at <strong>HS PATEL BROS PEST SERVICES PVT LTD</strong></p>
         <Link
           to="/Allservices"
           className="mt-6 inline-block bg-[#229c4f] text-white px-6 py-3 rounded-md font-bold hover:bg-green-800"

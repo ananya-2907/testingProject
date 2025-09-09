@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Homepage";
 import emailjs from "@emailjs/browser";
+import bug from "../Images/bug.jpg";
 
 export default function BedBugControlPage() {
   const form = useRef();
@@ -48,159 +49,174 @@ export default function BedBugControlPage() {
   return (
     <>
        <Navbar />
-      <div className="flex flex-col lg:flex-row py-24 p-6 max-w-7xl mx-auto">
-    
-        <div className="lg:w-2/3 lg:pr-8">
-          <header className="mb-6">
-            <h1 className="text-3xl font-bold text-green-800">Bed Bug Pest Control</h1>
-            <p className="mt-2 text-gray-600">
-              Don’t let bed bugs rob your sleep. Choose Patelbros for safe, effective, and professional bed bug elimination.
-            </p>
-          </header>
+      <div className="relative flex flex-col lg:flex-row py-24 p-6 max-w-7xl mx-auto">
+  {/* Background image with opacity */}
+  <div
+    className="absolute inset-0 bg-cover bg-center"
+    style={{
+      backgroundImage: `url(${bug})`,
+      opacity: 0.1,
+    }}
+  ></div>
 
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-2">Why Book Bed Bug Control Services?</h2>
-            <ul className="list-disc ml-6 text-gray-700 space-y-1">
-              <li>Minimizes chances of contracting diseases</li>
-              <li>Ensures professional solutions</li>
-              <li>Saves time and money</li>
-              <li>Prevents upholstery damage</li>
-              <li>Promotes healthier indoor environment</li>
-              <li>Improves sleep quality</li>
-              <li>Ensures peace of mind</li>
-            </ul>
-          </section>
+  {/* Content wrapper to keep text/form above background */}
+  <div className="relative z-10 flex flex-col lg:flex-row w-full">
+    {/* Left Content */}
+    <div className="lg:w-2/3 lg:pr-8">
+      <header className="mb-6">
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-4 sm:mb-0 text-green-800">Bed Bug Pest Control</h1>
+        <p className="mt-2 text-gray-600">
+          Don’t let bed bugs rob your sleep. Choose Patelbros for safe, effective, and professional bed bug elimination.
+        </p>
+      </header>
 
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-2">When to Book?</h2>
-            <ul className="list-disc ml-6 text-gray-700 space-y-1">
-              <li>Reddish or rusty spots on bedsheets</li>
-              <li>Eggs, eggshells, or pale yellow skins</li>
-              <li>Live bed bugs on bed or curtains</li>
-              <li>Fecal spots on mattresses</li>
-            </ul>
-          </section>
+      <section className="mb-6">
+        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-0 text-black">Why Book Bed Bug Control Services?</h2>
+        <ul className="list-disc ml-6 mt-3 text-gray-700 space-y-1">
+          <li>Minimizes chances of contracting diseases</li>
+          <li>Ensures professional solutions</li>
+          <li>Saves time and money</li>
+          <li>Prevents upholstery damage</li>
+          <li>Promotes healthier indoor environment</li>
+          <li>Improves sleep quality</li>
+          <li>Ensures peace of mind</li>
+        </ul>
+      </section>
 
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-2">Types of Services</h2>
-            <div className="overflow-x-auto">
-              <table className="min-w-full border text-sm text-left">
-                <thead className="bg-gray-200">
-                  <tr>
-                    <th className="px-4 py-2">Service</th>
-                    <th className="px-4 py-2">Details</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-t">
-                    <td className="px-4 py-2 font-medium">BBMS - Lite</td>
-                    <td className="px-4 py-2">
-                      Detecting hideouts, mild odor spray, 2 visits (Day 1 & Day 16), 1 person per service
-                    </td>
-                  </tr>
-                  <tr className="border-t">
-                    <td className="px-4 py-2 font-medium">BBMS - Pro</td>
-                    <td className="px-4 py-2">
-                      Detecting hideouts, mild odor spray, inspect effectiveness, 4 visits (Days 1, 16, 46, 76), 1 person per service
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
+      <section className="mb-6">
+        <h2 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4 sm:mb-0 text-black">When to Book?</h2>
+        <ul className="list-disc ml-6 mt-3 text-gray-700 space-y-1">
+          <li>Reddish or rusty spots on bedsheets</li>
+          <li>Eggs, eggshells, or pale yellow skins</li>
+          <li>Live bed bugs on bed or curtains</li>
+          <li>Fecal spots on mattresses</li>
+        </ul>
+      </section>
 
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-2">How We Work</h2>
-            <ol className="list-decimal ml-6 text-gray-700 space-y-1">
-              <li>Identification of infested areas</li>
-              <li>Application of mild-odor spray</li>
-              <li>Follow-up inspections to ensure elimination</li>
-            </ol>
-          </section>
-
-          <section className="mb-6">
-            <h2 className="text-2xl font-semibold mb-2">Terms and Conditions</h2>
-            <p className="text-gray-700">
-              Treatment effectiveness begins within 24 hours. Customer must follow post-treatment precautions as advised.
-            </p>
-          </section>
-
-          <footer className="pt-4 mt-8 border-t">
-            <p className="text-sm text-gray-600">Call us: 8707727951 | Email: patelbrospest@gmail.com</p>
-          </footer>
+      <section className="mb-6">
+        <h2 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4 sm:mb-0 text-black">Types of Services</h2>
+        <div className="overflow-x-auto mt-4">
+          <table className="min-w-full border text-sm text-left">
+            <thead className="bg-gray-100">
+              <tr>
+                <th className="px-4 py-2">Service</th>
+                <th className="px-4 py-2">Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-t">
+                <td className="px-4 py-2 font-medium">BBMS - Lite</td>
+                <td className="px-4 py-2">
+                  Detecting hideouts, mild odor spray, 2 visits (Day 1 & Day 16), 1 person per service
+                </td>
+              </tr>
+              <tr className="border-t">
+                <td className="px-4 py-2 font-medium">BBMS - Pro</td>
+                <td className="px-4 py-2">
+                  Detecting hideouts, mild odor spray, inspect effectiveness, 4 visits (Days 1, 16, 46, 76), 1 person per service
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </section>
 
-        {/* Booking Form */}
-        <div className="lg:w-1/3 relative top-4 h-fit bg-gray-50 p-6 rounded shadow-[0_4px_20px_rgba(34,197,94,0.4)]  border">
-          <h2 className="text-2xl font-semibold mb-4">Booking Form</h2>
-          <form ref={form} onSubmit={handleSubmit} className="space-y-4">
-            <input
-              name="name"
-              type="text"
-              required
-              onChange={handleChange}
-              value={formData.name}
-              placeholder="Your Name"
-              className="border p-2 w-full"
-            />
-            <input
-              name="phone"
-              type="tel"
-              required
-              onChange={handleChange}
-              value={formData.phone}
-              placeholder="Mobile Number"
-              className="border p-2 w-full"
-            />
-            <input
-              name="pincode"
-              type="text"
-              required
-              onChange={handleChange}
-              value={formData.pincode}
-              placeholder="Pin Code"
-              className="border p-2 w-full"
-            />
-            <select
-              name="size"
-              required
-              onChange={handleChange}
-              value={formData.size}
-              className="border p-2 w-full"
-            >
-              <option value="">Select Size</option>
-              <option value="1BHK">1BHK</option>
-              <option value="2BHK">2BHK</option>
-              <option value="3BHK">3BHK</option>
-              <option value="Villa">Villa</option>
-            </select>
-            <select
-              name="package"
-              required
-              onChange={handleChange}
-              value={formData.package}
-              className="border p-2 w-full"
-            >
-              <option value="">Select Package</option>
-              <option value="Lite">BBMS - Lite</option>
-              <option value="Pro">BBMS - Pro</option>
-            </select>
+      <section className="mb-6">
+        <h2 className="text-lg sm:text-xl lg:text-2xl font-bold sm:mb-0 text-black mb-4">How We Work</h2>
+        <ol className="list-decimal ml-6 text-gray-700 mt-3 space-y-1">
+          <li>Identification of infested areas</li>
+          <li>Application of mild-odor spray</li>
+          <li>Follow-up inspections to ensure elimination</li>
+        </ol>
+      </section>
 
-            {/* Hidden fields for EmailJS template compatibility */}
-            <input type="hidden" name="service" value="Bed Bug Control" />
-            <input type="hidden" name="price" value="" />
-            <input type="hidden" name="termite_type" value="" />
-            <input type="hidden" name="details" value="" />
+      <section className="mb-6">
+        <h2 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4 sm:mb-0 text-black">Terms and Conditions</h2>
+        <p className="text-gray-700 mt-3">
+          Treatment effectiveness begins within 24 hours. Customer must follow post-treatment precautions as advised.
+        </p>
+      </section>
 
-            <button
-              type="submit"
-              className="bg-green-700 text-white px-4 py-2 rounded w-full"
-            >
-              Book Now
-            </button>
-          </form>
-        </div>
-      </div>
+      <footer className="pt-4 mt-8 border-t border-green-800">
+        <p className="text-sm text-green-800 font-bold">
+          Call us: 8707727951 | Email: patelbrospest@gmail.com
+        </p>
+      </footer>
+    </div>
+
+    {/* Booking Form (unchanged) */}
+    <div className="lg:w-1/3 relative top-4 h-fit bg-gray-50 p-6 rounded shadow-[0_4px_20px_rgba(34,197,94,0.4)] border">
+      <h2 className="text-2xl font-semibold mb-4">Booking Form</h2>
+      <form ref={form} onSubmit={handleSubmit} className="space-y-4">
+        <input
+          name="name"
+          type="text"
+          required
+          onChange={handleChange}
+          value={formData.name}
+          placeholder="Your Name"
+          className="border p-2 w-full"
+        />
+        <input
+          name="phone"
+          type="tel"
+          required
+          onChange={handleChange}
+          value={formData.phone}
+          placeholder="Mobile Number"
+          className="border p-2 w-full"
+        />
+        <input
+          name="pincode"
+          type="text"
+          required
+          onChange={handleChange}
+          value={formData.pincode}
+          placeholder="Pin Code"
+          className="border p-2 w-full"
+        />
+        <select
+          name="size"
+          required
+          onChange={handleChange}
+          value={formData.size}
+          className="border p-2 w-full"
+        >
+          <option value="">Select Size</option>
+          <option value="1BHK">1BHK</option>
+          <option value="2BHK">2BHK</option>
+          <option value="3BHK">3BHK</option>
+          <option value="Villa">Villa</option>
+        </select>
+        <select
+          name="package"
+          required
+          onChange={handleChange}
+          value={formData.package}
+          className="border p-2 w-full"
+        >
+          <option value="">Select Package</option>
+          <option value="Lite">BBMS - Lite</option>
+          <option value="Pro">BBMS - Pro</option>
+        </select>
+
+        {/* Hidden fields for EmailJS template compatibility */}
+        <input type="hidden" name="service" value="Bed Bug Control" />
+        <input type="hidden" name="price" value="" />
+        <input type="hidden" name="termite_type" value="" />
+        <input type="hidden" name="details" value="" />
+
+        <button
+          type="submit"
+          className="bg-green-700 text-white px-4 py-2 rounded w-full"
+        >
+          Book Now
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
       <Footer />
     </>
   );

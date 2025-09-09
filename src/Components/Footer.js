@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
-
+// import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+const logo = require("../Images/logo2.png");
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-10">
@@ -9,7 +9,6 @@ export default function Footer() {
         <div>
           <h2 className="text-lg font-bold mb-3">Our Services</h2>
           <ul className="space-y-2 text-sm">
-            
             <li><Link to="/Services/cockroach-control" className="hover:text-gray-400">Cockroach Control</Link></li>
             <li><Link to="/Services/termite" className="hover:text-gray-400">Termite Control</Link></li>
             <li><Link to="Services/Bedbug" className="hover:text-gray-400">Bedbug Control</Link></li>
@@ -17,36 +16,28 @@ export default function Footer() {
             <li><Link to="/Services/Woodwork" className="hover:text-gray-400">Wood Borer</Link></li>
             <li><Link to="/Services/Rat" className="hover:text-gray-400">Rodent Control</Link></li>
           </ul>
+     <div className="flex items-center mt-6">
+  <img
+    src={logo} // replace with your logo path
+    alt="Logo"
+    className="h-6 w-6 object-contain"
+  /> 
+     <p className="hover:text-gray-400 font-bold text-sm">
+     HS PATEL BROS PEST SERVICES PVT LTD
+  </p>
+</div>
+
         </div>
 
         {/* Other Links Section */}
         <div>
           <h2 className="text-lg font-bold mb-3">Other Links</h2>
           <ul className="space-y-2 text-sm">
-            {/* <li><Link to="/offers" className="hover:text-gray-400">Offers</Link></li> */}
             <li><Link to="/about_us" className="hover:text-gray-400">About Us</Link></li>
             <li><Link to="/contactus" className="hover:text-gray-400">Contact Us</Link></li>
-            {/* <li><Link to="/careers" className="hover:text-gray-400">Careers</Link></li> */}
             <li><Link to="/feedback" className="hover:text-gray-400">Feedback</Link></li>
             <li><Link to="/blog" className="hover:text-gray-400">Blog</Link></li>
           </ul>
-        </div>
-
-        {/* Follow Us Section */}
-        <div>
-          <h2 className="text-lg font-bold mb-3">Follow Us</h2>
-          <div className="flex space-x-4">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <FaFacebookF className="text-lg hover:text-gray-400" />
-            </a>
-          
-            <a href="https://www.instagram.com/hs_patel_bros_pest_service/" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="text-lg hover:text-gray-400" />
-            </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-              <FaYoutube className="text-lg hover:text-gray-400" />
-            </a>
-          </div>
         </div>
 
         {/* Contact Section */}
@@ -55,22 +46,27 @@ export default function Footer() {
           <p className="mb-3 text-sm">📞 <a href="tel:8828333888" className="hover:text-gray-400">8707727951</a></p>
 
           <h2 className="text-lg font-bold mb-3">Mail</h2>
-          
           <p className="mb-2 text-sm">📧 <a href="mailto:info@rentokilpci-hicare.com" className="hover:text-gray-400">patelbrospest@gmail.com</a></p>
-          {/* <p>📧 <a href="mailto:enterprise.care@rentokilpci-hicare.com" className="hover:text-gray-400">enterprise.care@rentokilpci-hicare.com</a></p> */}
 
-            <h2 className="text-lg font-bold mb-3">Address</h2>
+          <h2 className="text-lg font-bold mb-3">Address</h2>
           <p className="mb-3 text-sm hover:text-gray-400">🏢 Suti mill power house gwalior road jhansi 284001</p>
 
         </div>
-      </div>
 
-      {/* Download Section */}
-      {/* <div className="text-center mt-8">
-        <button className="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600">
-          Download Now
-        </button>
-      </div> */}
+        {/* Google Map (square) */}
+          <div className="w-56 h-56 mt-4">
+            <iframe
+              title="Google Map"
+
+            src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6640.504456762477!2d78.5561356!3d25.484043!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDI5JzAyLjYiTiA3OMKwMzMnMjEuMiJF!5e1!3m2!1sen!2sin!4v1757414449704!5m2!1sen!2sin"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+      </div>
 
       {/* Copyright */}
       <div className="text-center text-gray-500 text-sm mt-6">
@@ -79,5 +75,3 @@ export default function Footer() {
     </footer>
   );
 }
-
-// export default Footer;
