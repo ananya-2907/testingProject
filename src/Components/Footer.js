@@ -8,7 +8,7 @@ export default function Footer() {
         {/* Services Section */}
         <div>
           <h2 className="text-lg font-bold mb-3">Our Services</h2>
-          <ul className="space-y-2">
+          <ul className="space-y-2 text-sm">
             
             <li><Link to="/Services/cockroach-control" className="hover:text-gray-400">Cockroach Control</Link></li>
             <li><Link to="/Services/termite" className="hover:text-gray-400">Termite Control</Link></li>
@@ -22,7 +22,7 @@ export default function Footer() {
         {/* Other Links Section */}
         <div>
           <h2 className="text-lg font-bold mb-3">Other Links</h2>
-          <ul className="space-y-2">
+          <ul className="space-y-2 text-sm">
             {/* <li><Link to="/offers" className="hover:text-gray-400">Offers</Link></li> */}
             <li><Link to="/about_us" className="hover:text-gray-400">About Us</Link></li>
             <li><Link to="/contactus" className="hover:text-gray-400">Contact Us</Link></li>
@@ -34,17 +34,17 @@ export default function Footer() {
 
         {/* Follow Us Section */}
         <div>
-          <h2 className="text-lg font-bold mb-3">Follow Us On</h2>
+          <h2 className="text-lg font-bold mb-3">Follow Us</h2>
           <div className="flex space-x-4">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <FaFacebookF className="text-xl hover:text-gray-400" />
+              <FaFacebookF className="text-lg hover:text-gray-400" />
             </a>
           
             <a href="https://www.instagram.com/hs_patel_bros_pest_service/" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="text-xl hover:text-gray-400" />
+              <FaInstagram className="text-lg hover:text-gray-400" />
             </a>
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-              <FaYoutube className="text-xl hover:text-gray-400" />
+              <FaYoutube className="text-lg hover:text-gray-400" />
             </a>
           </div>
         </div>
@@ -52,11 +52,16 @@ export default function Footer() {
         {/* Contact Section */}
         <div>
           <h2 className="text-lg font-bold mb-3">Call Us</h2>
-          <p className="mb-3">📞 <a href="tel:8828333888" className="hover:text-gray-400">8707727951</a></p>
+          <p className="mb-3 text-sm">📞 <a href="tel:8828333888" className="hover:text-gray-400">8707727951</a></p>
 
           <h2 className="text-lg font-bold mb-3">Mail</h2>
-          <p className="mb-2">📧 <a href="mailto:info@rentokilpci-hicare.com" className="hover:text-gray-400">patelbrospest@gmail.com</a></p>
+          
+          <p className="mb-2 text-sm">📧 <a href="mailto:info@rentokilpci-hicare.com" className="hover:text-gray-400">patelbrospest@gmail.com</a></p>
           {/* <p>📧 <a href="mailto:enterprise.care@rentokilpci-hicare.com" className="hover:text-gray-400">enterprise.care@rentokilpci-hicare.com</a></p> */}
+
+            <h2 className="text-lg font-bold mb-3">Address</h2>
+          <p className="mb-3 text-sm hover:text-gray-400">🏢 Suti mill power house gwalior road jhansi 284001</p>
+
         </div>
       </div>
 

@@ -1,9 +1,6 @@
-
-
-
-
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+// import Navbar from "../Components/Homepage";
 export default function WoodBorerPage() {
 const [formData, setFormData] = useState({
 service: "wood-borer",
@@ -201,7 +198,10 @@ setShowPrice(true);
  
 };
 
-return ( <div className="flex flex-col lg:flex-row justify-center items-stretch p-6 max-w-6xl mx-auto space-y-6 lg:space-y-0 lg:space-x-6">
+return ( 
+  <>
+  
+<div className="flex flex-col lg:flex-row justify-center items-stretch p-6 max-w-6xl mx-auto space-y-6 lg:space-y-0 lg:space-x-6">
 {/* Booking Form \*/} <div className="lg:w-1/2 h-full p-10 pr-10 rounded shadow-[0_4px_20px_rgba(34,197,94,0.4)]  border bg-white flex flex-col justify-between"> <h2 className="text-2xl font-semibold mb-4">Booking Form</h2> <form ref={form} onSubmit={handleSubmit} 
 className="space-y-4"> <label htmlFor="service" className="block text-lg font-medium">Select Service</label> <select name="service" required onChange={handleChange} value={formData.service} className="border p-2 w-full"> <option value="wood-borer">Wood Borer Control</option> <option value="cockroach">Cockroach Control</option> <option value="wooden-rodent">Wooden Rodent Control</option> <option value="mosquito">Mosquito Control</option> <option value="termite">Termite Control</option> </select>
 
@@ -267,55 +267,56 @@ className="space-y-4"> <label htmlFor="service" className="block text-lg font-me
       {serviceBenefits[formData.service] || "Select a service to know more about its benefits."}
     </p>
   </div> */}
-  <div className="lg:w-1/2 h-full p-10 flex flex-col ml-20 justify-between">
+<div className="lg:w-1/2 w-full h-full p-6 sm:p-8 md:p-10 flex flex-col lg:ml-20 justify-between">
   {/* Heading */}
-  <div className="flex items-center justify-between mb-6">
-    <h2 className="text-4xl font-extrabold text-gray-800">
-      Why Choose <span className="text-green-800 mt-12">WOOD BORER CONTROL?</span>
+  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 text-center sm:text-left">
+    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-800 mb-4 sm:mb-0">
+      Why Choose <span className="text-green-800 block sm:inline">WOOD BORER CONTROL?</span>
     </h2>
-    {/* Icon (table + shield like image) */}
-    <div className="w-16 h-16 bg-green-100  flex items-center justify-center rounded-full shadow">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-8 h-8 text-green-700">
+    {/* Icon */}
+    <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-green-100 flex items-center justify-center rounded-full shadow mx-auto sm:mx-0">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-green-700">
         <path d="M12 22c5-1.5 8-5.5 8-10V5l-8-3-8 3v7c0 4.5 3 8.5 8 10z" />
       </svg>
     </div>
   </div>
 
   {/* Description */}
-  <p className="text-gray-700 text-lg leading-relaxed mb-8">
+  <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-8 text-center sm:text-left">
     Our Wood Borer Control service protects your valuable wooden furniture, flooring, and structural elements from internal damage caused by wood-boring larvae. This early intervention helps preserve the aesthetics and longevity of wooden assets, enhances indoor hygiene, and prevents costly future repairs. Regular treatments also reduce the risk of secondary pest infestations that thrive on weakened wood.
   </p>
 
   {/* Benefits */}
-  <div className="grid grid-cols-2 gap-y-4 gap-x-6">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6">
     <div className="flex items-center space-x-2">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6 text-green-700">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-5 h-5 sm:w-6 sm:h-6 text-green-700">
         <path d="M12 22c5-1.5 8-5.5 8-10V5l-8-3-8 3v7c0 4.5 3 8.5 8 10z" />
       </svg>
-      <span className="text-gray-800 font-medium">Protects Furniture</span>
+      <span className="text-gray-800 text-sm sm:text-base font-medium">Protects Furniture</span>
     </div>
     <div className="flex items-center space-x-2">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6 text-green-700">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-5 h-5 sm:w-6 sm:h-6 text-green-700">
         <circle cx="12" cy="12" r="10" />
       </svg>
-      <span className="text-gray-800 font-medium">Enhances Hygiene</span>
+      <span className="text-gray-800 text-sm sm:text-base font-medium">Enhances Hygiene</span>
     </div>
     <div className="flex items-center space-x-2">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6 text-green-700">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-5 h-5 sm:w-6 sm:h-6 text-green-700">
         <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 6 4 4 6.5 4c1.74 0 3.41 1.01 4.07 2.5h1C13.09 5.01 14.76 4 16.5 4 19 4 21 6 21 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
       </svg>
-      <span className="text-gray-800 font-medium">Prevents Costly Repairs</span>
+      <span className="text-gray-800 text-sm sm:text-base font-medium">Prevents Costly Repairs</span>
     </div>
     <div className="flex items-center space-x-2">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6 text-green-700">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-5 h-5 sm:w-6 sm:h-6 text-green-700">
         <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.93V11h-2v5.93a8.001 8.001 0 01-6-7.73h2a6 6 0 006 6z" />
       </svg>
-      <span className="text-gray-800 font-medium">Long-Lasting Results</span>
+      <span className="text-gray-800 text-sm sm:text-base font-medium">Long-Lasting Results</span>
     </div>
   </div>
 </div>
 
-</div>
 
+</div>
+</>
 );
 }

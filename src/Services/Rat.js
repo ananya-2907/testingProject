@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import Navbar from "../Components/Homepage";
 import Footer from "../Components/Footer";
 import emailjs from "@emailjs/browser";
 
@@ -42,7 +43,8 @@ export default function RatControlPage() {
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row p-6 max-w-7xl mx-auto">
+      <Navbar />
+      <div className="flex flex-col lg:flex-row p-6 py-24 max-w-7xl mx-auto">
         <div className="lg:w-2/3 lg:pr-8">
           <header className="mb-6">
             <h1 className="text-3xl font-bold text-green-800">
@@ -127,7 +129,7 @@ export default function RatControlPage() {
           </footer>
         </div>
 
-        <div className="lg:w-1/3 sticky top-4 h-fit bg-gray-50 p-6 border rounded shadow-md">
+        <div className="lg:w-1/3 relative top-4 h-fit bg-gray-50 p-6 rounded shadow-[0_4px_20px_rgba(34,197,94,0.4)]  border">
           <h2 className="text-2xl font-semibold mb-4">Booking Form</h2>
           <form ref={form} onSubmit={handleSubmit} className="space-y-4">
             <input

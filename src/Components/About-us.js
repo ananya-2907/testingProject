@@ -1,13 +1,15 @@
 import React from 'react';
 import Footer from "./Footer";
+import Navbar from './Homepage';
 import about from "../Images/about.png";
 
 function AboutUs() {
   return (
-    <div className="min-h-screen text-gray-800"
+    <div className="min-h-screen"
      >
+      <Navbar />
       {/* Hero Section */}
-      <section className="bg-cover bg-center text-white p-24"  style={{ backgroundImage: `url(${about})` }} >
+      <section className="bg-cover py-32 bg-center text-white p-24"  style={{ backgroundImage: `url(${about})` }} >
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-5xl font-extrabold mb-4">About Us</h1>
           <p className="text-lg max-w-2xl text-gray-200 mx-auto">
@@ -33,7 +35,7 @@ Choose HS PatelBros Pest Services today and experience the difference of expert 
       </section>
 
       {/* Why Choose Us */}
-      <section className="bg-gray-200 py-20">
+      <section className="bg-gray-50 py-20">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-black text-center mb-12">Why Choose Us</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -74,7 +76,7 @@ Choose HS PatelBros Pest Services today and experience the difference of expert 
 
       {/* CEO Bio Section */}
       <section className="container mx-auto px-6 py-12">
-        <div className="bg-white p-8">
+        <div className="bg-green-50 p-8">
           <h2 className="text-4xl font-bold text-black mb-4">Meet Our CEO</h2>
           <p className="text-gray-700 mb-4">
             <strong>Shubham Patel</strong> (B.Sc and M.Sc in Zoology) is a seasoned professional with extensive experience in the pest control industry. With a passion for delivering exceptional customer service and a commitment to innovation, <strong>We</strong> leads <strong>HS PATELBROS Pest Services</strong> with a vision to provide effective, eco-friendly, and customer-centric pest control solutions.
@@ -91,7 +93,7 @@ Choose HS PatelBros Pest Services today and experience the difference of expert 
       </section>
 
       {/* Contact Section */}
-      <section className="bg-gray-200 text-black py-12">
+      <section className="bg-gray-50 text-black py-12">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-4">Let’s Get in Touch</h2>
           <p className="mb-6 font-bold text-gray-600">Reach out to us for inspections, queries, or customized pest control plans.</p>

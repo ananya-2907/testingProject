@@ -1,9 +1,11 @@
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import Footer from "./Footer";
+import Navbar from './Homepage';
 export default function ContactUs() {
   return (
     <>
-    <div className="bg-gray-50 text-gray-800 py-12 px-6">
+    <Navbar />
+    <div className="bg-gray-50 text-gray-800 py-20 px-6">
       {/* Contact Header */}
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-2">Contact Us</h1>
@@ -20,16 +22,15 @@ export default function ContactUs() {
         <div>
           <FaEnvelope className="text-3xl mx-auto text-red-500 mb-2" />
           <h3 className="font-bold">Email Us at</h3>
-          <p className="text-sm">abcd@patelbrospest.com</p>
-          <p className="text-sm"> patelbrospest@gmail.com</p>
+          <p className="text-sm">patelbrospest@gmail.com</p>
+     
         </div>
         <div>
           <FaMapMarkerAlt className="text-3xl mx-auto text-green-500 mb-2" />
           <h3 className="font-bold">Registered Head Office</h3>
           <p className="text-sm mt-1">
             Patelbros Services PVT LTD. <br />
-            near baidhyanth office abc calony<br />
-            abc landmark - 284002
+           Suti mill power house gwalior road, jhansi 284001.
           </p>
         </div>
       </div>
