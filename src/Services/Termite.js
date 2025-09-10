@@ -132,8 +132,10 @@ export default function TermitePage() {
                 Terms and Conditions
               </h2>
               <p className="text-gray-600 mt-3">
-                Warranty is valid only when post-treatment instructions are
-                followed. Re-inspection required every 6 months for Pro package.
+                {/* Warranty is valid only when post-treatment instructions are
+                followed. Re-inspection required every 6 months for Pro package. */}
+
+                Warranty is valid for 1, 2, 3, 5 & 10 year. *t&c apply
               </p>
             </section>
 

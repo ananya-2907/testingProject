@@ -51,7 +51,6 @@ export default function Homepage() {
 }, []);
   return (
     <div className="bg-green-800">
-      
 
        <section className="relative h-[720px] overflow-hidden flex items-center">
       {/* Background Images */}
