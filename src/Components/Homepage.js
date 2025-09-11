@@ -89,15 +89,15 @@ export default function Navbar() {
               setPestControlDropdown(false);
             }}
           >
-            <span className="cursor-pointer hover:text-green-800 font-bold">Services</span>
+            <span className="cursor-pointer overflow-hidden hover:text-green-800 font-bold">Services</span>
 
             {/* Main Dropdown */}
             {servicesDropdown && (
-              <div className="absolute left-0 mt-2 bg-gray-100 text-gray-800 shadow-lg rounded-md w-44 font-bold z-50 lg:mt-2 lg:left-0">
+              <div className="absolute left-0  mt-2 bg-gray-100 text-gray-800 shadow-lg rounded-md w-44 font-bold z-50 lg:mt-2 lg:left-0">
                 <ul>
                  {/* Pest Control Submenu */}
 <li
-  className="p-2 hover:bg-green-800 hover:text-gray-100 cursor-pointer relative"
+  className="p-2 hover:bg-green-800 hover:text-gray-100  cursor-pointer relative"
   onClick={(e) => {
     e.stopPropagation();
     setPestControlDropdown(!pestControlDropdown);
@@ -106,7 +106,7 @@ export default function Navbar() {
   {pestControlDropdown && (
     <div
       className={`
-        absolute z-50 bg-green-800 text-gray-100 shadow-lg rounded-md w-60
+        absolute z-50 bg-green-800 overflow-hidden text-gray-100 shadow-lg  w-60
         lg:top-0 lg:left-full   /* Desktop → open to right */
         top-full left-2 transform -translate-x-1/2 mt-10  /* Mobile → open centered below */
         lg:transform-none lg:mt-0

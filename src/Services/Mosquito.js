@@ -85,7 +85,7 @@ export default function MosquitoControlPage() {
                 <li>Allows you to open windows 24x7</li>
                 <li>Improves sleep and work efficiency</li>
                 <li>Uses safe, CIB-approved chemicals</li>
-                <li>Backed by 30-day money-back guarantee</li>
+                {/* <li>Backed by 30-day money-back guarantee</li> */}
               </ul>
             </section>
 
@@ -108,7 +108,7 @@ export default function MosquitoControlPage() {
               </h2>
               <ul className="list-disc ml-6 text-gray-700 mt-3 space-y-1 text-sm sm:text-base">
                 <li>India’s 1st 3X Mosquito Control Treatment</li>
-                <li>30+ years of industry experience</li>
+                <li>20+ years of industry experience</li>
                 <li>90 mosquito-free days guaranteed</li>
                 <li>Safe, government-approved chemicals</li>
                 <li>Service in 20+ Indian cities</li>
