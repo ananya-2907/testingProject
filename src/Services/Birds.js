@@ -47,7 +47,7 @@ export default function BirdControlPage() {
   return (
     <>
       <Navbar />
-      <div className="relative flex flex-col lg:flex-row p-6 py-28 max-w-7xl mx-auto">
+      <div className="relative flex flex-col lg:flex-row p-6 py-16 lg:py-24 max-w-7xl mx-auto">
         {/* Background layer with opacity */}
         <div
           className="absolute inset-0 bg-cover bg-center"

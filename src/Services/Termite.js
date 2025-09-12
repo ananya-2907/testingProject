@@ -51,7 +51,7 @@ export default function TermitePage() {
         ></div>
 
         {/* Content */}
-        <div className="relative flex flex-col lg:flex-row p-6 py-28 max-w-7xl mx-auto">
+          <div className="relative flex flex-col lg:flex-row p-6 py-16 lg:py-24 max-w-7xl mx-auto">
           {/* Left Content */}
           <div className="lg:w-2/3 lg:pr-8">
             <header className="mb-6">

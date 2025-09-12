@@ -49,7 +49,8 @@ export default function BedBugControlPage() {
   return (
     <>
        <Navbar />
-      <div className="relative flex flex-col lg:flex-row py-28 p-6 max-w-7xl mx-auto">
+   <div className="relative flex flex-col lg:flex-row p-6 py-16 lg:py-24 max-w-7xl mx-auto">
+
   {/* Background image with opacity */}
   <div
     className="absolute inset-0 bg-cover bg-center"

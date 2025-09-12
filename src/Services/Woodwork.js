@@ -43,7 +43,7 @@ export default function WoodBorerPage() {
       <Navbar />
 
       {/* Background wrapper */}
-      <div className="relative py-28 px-6">
+      <div className="relative py-16 px-6">
         {/* Background Image Layer */}
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -54,7 +54,8 @@ export default function WoodBorerPage() {
         ></div>
 
         {/* Foreground Content */}
-        <div className="relative z-10 flex flex-col lg:flex-row max-w-7xl mx-auto gap-8">
+     <div className="relative flex flex-col lg:flex-row max-w-7xl mx-auto p-6 pt-0 lg:pt-12">
+
           {/* Left Content */}
           <div className="lg:w-2/3">
             <header className="mb-6">
