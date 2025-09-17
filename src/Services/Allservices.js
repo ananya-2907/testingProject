@@ -212,8 +212,8 @@ export default function WoodBorerPage() {
     <>
       <div className="flex flex-col lg:flex-row justify-center items-stretch p-6 max-w-6xl mx-auto space-y-6 lg:space-y-0 lg:space-x-6">
         {/* Booking Form */}
-        <div className="lg:w-1/2 h-full p-10 pr-10 rounded shadow-[0_4px_20px_rgba(34,197,94,0.4)]  border bg-white flex flex-col justify-between">
-          <h2 className="text-2xl font-semibold mb-4">Booking Form</h2>
+        <div className="lg:w-1/2 h-full p-10 pr-10 text-white rounded-md shadow-[0_4px_20px_rgba(34,197,94,0.6)]  border bg-green-700 flex flex-col justify-between">
+          <h2 className="text-2xl font-semibold mb-4 ">Booking Form</h2>
           <form ref={form} onSubmit={handleSubmit} className="space-y-4">
             <label htmlFor="service" className="block text-lg font-medium">
               Select Service
@@ -223,7 +223,7 @@ export default function WoodBorerPage() {
               required
               onChange={handleChange}
               value={formData.service}
-              className="border p-2 w-full"
+              className="border p-2 w-full text-gray-400 rounded-md"
             >
               <option value="wood-borer">Wood Borer Control</option>
               <option value="cockroach">Cockroach Control</option>
@@ -238,7 +238,7 @@ export default function WoodBorerPage() {
               required
               onChange={handleChange}
               placeholder="Your Name"
-              className="border p-2 w-full"
+              className="border p-2 w-full text-gray-400 rounded-md"
             />
             <input
               name="phone"
@@ -246,7 +246,7 @@ export default function WoodBorerPage() {
               required
               onChange={handleChange}
               placeholder="Mobile Number"
-              className="border p-2 w-full"
+              className="border p-2 w-full text-gray-400 rounded-md"
             />
             <input
               name="pincode"
@@ -254,13 +254,13 @@ export default function WoodBorerPage() {
               required
               onChange={handleChange}
               placeholder="Pin Code"
-              className="border p-2 w-full"
+              className="border p-2 w-full text-gray-400 rounded-md"
             />
             <select
               name="size"
               required
               onChange={handleChange}
-              className="border p-2 w-full"
+              className="border p-2 w-full text-gray-400 rounded-md"
             >
               <option value="">Select Size</option>
               <option value="1BHK">1BHK</option>
@@ -272,7 +272,7 @@ export default function WoodBorerPage() {
               name="package"
               required
               onChange={handleChange}
-              className="border p-2 w-full"
+              className="border p-2 w-full text-gray-400 rounded-md"
             >
               <option value="">Select Package</option>
               <option value="Lite">Lite</option>
@@ -284,7 +284,7 @@ export default function WoodBorerPage() {
                 required
                 onChange={handleChange}
                 value={formData.termiteType}
-                className="border p-2 w-full"
+                className="border p-2 w-full text-gray-400 rounded-md"
               >
                 <option value="">Select Termite Type</option>
                 <option value="pre-construction">Pre Construction</option>
@@ -294,7 +294,7 @@ export default function WoodBorerPage() {
 
             <button
               type="submit"
-              className="bg-green-700 text-white px-6 py-3 rounded w-full text-lg font-semibold hover:bg-green-800 transition"
+              className="bg-green-900 text-gray-50 px-6 py-3 rounded w-full text-lg font-semibold hover:bg-green-800 transition"
             >
               {isSending ? "Sending..." : "Book Now"}
             </button>

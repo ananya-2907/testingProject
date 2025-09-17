@@ -38,7 +38,7 @@ Choose HS PatelBros Pest Services today and experience the difference of expert 
 
       <section className="bg-gray-50 py-20">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-black text-center mb-12">Why Choose Us</h2>
+          <h2 className="text-4xl font-extrabold text-black text-center mb-12">Why Choose Us</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               ["Eco-Friendly Solutions", "Safe, odorless chemicals approved by the Central Insecticides Board."],
@@ -57,7 +57,7 @@ Choose HS PatelBros Pest Services today and experience the difference of expert 
 
       {/* Services Overview */}
       <section className="container mx-auto px-6 py-12">
-        <h2 className="text-4xl font-bold text-center text-black mb-12">Our Core Services</h2>
+        <h2 className="text-4xl font-extrabold text-center text-black mb-12">Our Core Services</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
             ["General Pest Control", "Protection from cockroaches, ants, and other pests."],
@@ -80,7 +80,7 @@ Choose HS PatelBros Pest Services today and experience the difference of expert 
         <div className="bg-green-50 p-8">
           <h2 className="text-4xl font-bold text-black mb-4">Meet Our CEO</h2>
           <p className="text-gray-700 mb-4">
-            <span className='text-blue-800 font-bold'>Shubham Patel</span> (B.Sc and M.Sc in Zoology) is a seasoned professional with extensive experience in the pest control industry. With a passion for delivering exceptional customer service and a commitment to innovation, <strong>We</strong> leads <strong>HS PATELBROS Pest Services</strong> with a vision to provide effective, eco-friendly, and customer-centric pest control solutions.
+            <span className='text-blue-800 font-bold'>Shubham Patel</span> is a seasoned professional with extensive experience in the pest control industry. With a passion for delivering exceptional customer service and a commitment to innovation, <strong>We</strong> leads <strong>HS PATELBROS Pest Services</strong> with a vision to provide effective, eco-friendly, and customer-centric pest control solutions.
           </p>
           <p className="text-gray-700 mb-4">
             Under <span className='text-blue-800 font-bold'>Shubham Patel</span>'s leadership, the company has established itself as a trusted partner for homes and businesses seeking reliable pest control services.
@@ -100,7 +100,7 @@ Choose HS PatelBros Pest Services today and experience the difference of expert 
           <p className="mb-6 font-bold text-gray-600">Reach out to us for inspections, queries, or customized pest control plans.</p>
           <div className="space-y-2 text-sm">
             <p><strong>📍 Address:</strong> 225/A2, Behind Suti Mill, Power house Gwalior road, Jhansi-284001</p>
-            <p><strong>📞 Call Us:</strong>8707727951</p>
+            <p><strong>📞 Call Us: </strong> 8707727951</p>
             <p><strong>📧 Email:</strong> patelbrospest@gmail.com</p>
             {/* <p><strong>🌐 Website:</strong>####</p> */}
           </div>

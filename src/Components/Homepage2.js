@@ -15,6 +15,7 @@ import tech4 from "../Images/Tech4.jpeg";
 import tech5 from "../Images/Tech5.jpeg";
 import tech6 from "../Images/Tech6.jpeg";
 import tech7 from "../Images/Tech7.jpeg";
+import b1 from "../Images/b1.jpg";
 import Allservice from "../Services/Allservices";
 const images = [
 
@@ -103,6 +104,45 @@ export default function Homepage() {
             <FaLeaf className="text-5xl text-green-500 mx-auto" />
             <h3 className="font-bold mt-3">Eco-Friendly</h3>
             <p className="text-gray-500">We prioritize the environment with non-toxic treatments.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* rate section */}
+      <section
+        className="relative py-24 bg-cover bg-center"
+      
+      style={{
+            backgroundImage: `url(${b1})`,
+          }}
+      >
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-80"></div>
+      
+        {/* Content */}
+        <div className="relative max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center text-white">
+          {/* Item 1 */}
+          <div>
+            <h3 className="text-4xl font-extrabold text-[#e8c34e]">20+</h3>
+            <p className="mt-2 text-lg">Years of Experience</p>
+          </div>
+      
+          {/* Item 2 */}
+          <div>
+            <h3 className="text-4xl font-extrabold text-[#e8c34e]">650+</h3>
+            <p className="mt-2 text-lg">Happy Customer</p>
+          </div>
+      
+          {/* Item 3 */}
+          <div>
+            <h3 className="text-4xl font-extrabold text-[#e8c34e]">130+</h3>
+            <p className="mt-2 text-lg">Projects Complete</p>
+          </div>
+      
+          {/* Item 4 */}
+          <div>
+            <h3 className="text-4xl font-extrabold text-[#e8c34e]">12+</h3>
+            <p className="mt-2 text-lg">Award Winning</p>
           </div>
         </div>
       </section>
