@@ -224,17 +224,18 @@ export default function MosquitoControlPage() {
         
       {/* call us */}
       
-      <div className="bg-orange-700 py-6">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex items-center justify-center">
-          <h2 className="text-white font-extrabold text-lg sm:text-xl md:text-2xl tracking-wide flex items-center">
-            FOR MOSQUITO TREATMENT CALL AT : 
-            <span className="ml-2 flex items-center">
-              8707727951
-              <Phone className="w-6 h-6 ml-2 inline-block text-white" />
-            </span>
-          </h2>
-        </div>
-      </div>
+     <div className="bg-orange-700 py-4 sm:py-6">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-white font-extrabold text-base sm:text-lg md:text-xl lg:text-2xl tracking-wide flex flex-col sm:flex-row items-center justify-center text-center">
+      <span>FOR MOSQUITO TREATMENT CALL AT :</span>
+      <span className="mt-2 sm:mt-0 sm:ml-3 flex items-center">
+        8707727951
+        <Phone className="w-5 h-5 sm:w-6 sm:h-6 ml-2 inline-block text-white" />
+      </span>
+    </h2>
+  </div>
+</div>
+
       
       {/* why us */}
       

@@ -1,14 +1,11 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { FaShieldAlt, FaBug, FaLeaf, FaStar, FaPhone } from "react-icons/fa";
+import { FaShieldAlt, FaBug, FaLeaf} from "react-icons/fa";
 import cockroach from "../Images/cockroach.png";
-import termite from "../Images/termite.jpg";
+import termite from "../Images/termite.png";
 import { FaQuoteLeft } from "react-icons/fa";
 import spray from "../Images/spray.jpg";
-import bg3 from "../Images/bg3.jpg";
-// import myphoto from "../Images/myphoto.jpg";
-// import bgImage from "..Images/bg.jpeg";
-// import bgImage from "../Images/bg.jpg";
+import bg3 from "../Images/bg3.png";
 import mosquito from "../Images/mosquito.png";
 import tech3 from "../Images/Tech3.jpeg";
 import tech4 from "../Images/Tech4.jpeg";
@@ -61,7 +58,7 @@ export default function Homepage() {
           src={img}
           alt="Slide"
           className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity  duration-3000 ${
-            index === currentIndex ? "opacity-50 z-10" : "opacity-0 z-0"
+            index === currentIndex ? "opacity-55 z-10" : "opacity-0 z-0"
           }`}
         />
       ))}
@@ -123,25 +120,25 @@ export default function Homepage() {
         <div className="relative max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center text-white">
           {/* Item 1 */}
           <div>
-            <h3 className="text-4xl font-extrabold text-[#e8c34e]">20+</h3>
+            <h3 className="text-4xl font-extrabold text-[#e8c34e]">5+</h3>
             <p className="mt-2 text-lg">Years of Experience</p>
           </div>
       
           {/* Item 2 */}
           <div>
-            <h3 className="text-4xl font-extrabold text-[#e8c34e]">650+</h3>
+            <h3 className="text-4xl font-extrabold text-[#e8c34e]">100+</h3>
             <p className="mt-2 text-lg">Happy Customer</p>
           </div>
       
           {/* Item 3 */}
           <div>
-            <h3 className="text-4xl font-extrabold text-[#e8c34e]">130+</h3>
+            <h3 className="text-4xl font-extrabold text-[#e8c34e]">50+</h3>
             <p className="mt-2 text-lg">Projects Complete</p>
           </div>
       
           {/* Item 4 */}
           <div>
-            <h3 className="text-4xl font-extrabold text-[#e8c34e]">12+</h3>
+            <h3 className="text-4xl font-extrabold text-[#e8c34e]">20+</h3>
             <p className="mt-2 text-lg">Award Winning</p>
           </div>
         </div>
