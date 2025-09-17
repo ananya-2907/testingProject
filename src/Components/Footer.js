@@ -15,6 +15,7 @@ export default function Footer() {
             <li><Link to="/Services/Mosquito" className="hover:text-gray-400">Mosquito Control</Link></li>
             <li><Link to="/Services/Woodwork" className="hover:text-gray-400">Wood Borer</Link></li>
             <li><Link to="/Services/Rat" className="hover:text-gray-400">Rodent Control</Link></li>
+            <li><Link to="/Services/Flying" className="hover:text-gray-400">Flying Insects Control</Link></li>
           </ul>
         </div>
 

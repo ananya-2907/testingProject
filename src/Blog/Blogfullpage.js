@@ -1,31 +1,39 @@
 import React from "react";
+import termite from "../Images/termite-blog.png";
+import cockroach from "../Images/cockroach-blog.png";
+import Navbar from "../Components/Homepage";
+import Footer from "../Components/Footer";
+import mosquito from "../Images/mosquito-blog.png";
 
 const blogPosts = [
   {
     title: "Top 5 Signs of a Termite Infestation",
     summary: "Don’t ignore these common indicators in your home.",
-    image: "/images/termite-blog.jpg",
+    image: termite,
     link: "/blog/termite-signs",
   },
   {
     title: "How to Prevent Cockroach Invasions",
     summary: "Simple tips to keep your kitchen and home cockroach-free.",
-    image: "/images/cockroach-blog.jpg",
+    image: cockroach,
     link: "/blog/cockroach-prevention",
   },
   {
     title: "Is Mosquito Fogging Safe? Myths vs Facts",
     summary: "Understand how fogging works and if it’s safe for your family.",
-    image: "/images/mosquito-blog.jpg",
+    image: mosquito,
     link: "/blog/mosquito-fogging-safety",
   },
 ];
 
 export default function BlogPage() {
   return (
-    <div className="bg-blue-50 text-gray-800 min-h-screen">
+    
+    <>
+    <Navbar />
+    <div className="bg-blue-50 py-16 text-gray-800 min-h-screen">
       {/* Hero */}
-      <section className="bg-gradient-to-r from-green-400 via-blue-300 to-green-200 py-20 px-4 text-center">
+      <section className="bg-gradient-to-r from-green-700 via-green-900 to-green-900 py-20 px-4 text-center">
         <h1 className="text-5xl font-extrabold text-white drop-shadow mb-4">
           Pest Control Blog & Tips
         </h1>
@@ -67,5 +75,7 @@ export default function BlogPage() {
         </div>
       </section>
     </div>
+    <Footer />
+    </>
   );
 }

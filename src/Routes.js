@@ -21,6 +21,7 @@ import Termiteblog from './Blog/Termiteblog';
 import Cockroachblog from './Blog/Cockroachblog';
 import MosquitoBlog from './Blog/Mosquitoblog';
 import Rat from './Services/Rat';
+import Flying from './Services/Flying';
 import Birds from './Services/Birds';
 import Offer from './Components/Offer/Offerpage';
 import Offervisual from './Components/Offer/Offervisual';
@@ -38,6 +39,7 @@ function Routess() {
         <Route path="/services/pest-control-services" element={<Homepage />} />
         <Route path="/services/cockroach-control" element={<CockroachControl />} />
         <Route path="/services/termite-control" element={<TermiteControlPage />} />
+        {/* <Route path="/services/flying-control" element={<FlyingControlPage />} /> */}
         <Route path="/services/bedbug-control" element={<Homepage />} />
         <Route path="/services/mosquito-control" element={<MosquitoControlPage />} />
         <Route path="/services/wood-borer" element={<Homepage />} />
@@ -49,6 +51,7 @@ function Routess() {
         <Route path="/contactus" element={<Contactus />} />
         <Route path="/Services/Mosquito" element={<Mosquito />} />
         <Route path="/Services/Bedbug" element={<Bedbug />} />
+             <Route path="/Services/Flying" element={<Flying />} />
         <Route path="/Services/Woodwork" element={<Woodwork />} />
          <Route path="/Services/termite" element={<Termite />} />
           <Route path="/Services/Rat" element={<Rat />} />

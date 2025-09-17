@@ -125,6 +125,9 @@ export default function Navbar() {
         <li className="p-2 hover:bg-green-900 cursor-pointer">
           <Link to="/services/Rat">Rat Control</Link>
         </li>
+         <li className="p-2 hover:bg-green-900 cursor-pointer">
+          <Link to="/services/Flying">Flying Insects Control</Link>
+        </li>
         <li className="p-2 hover:bg-green-900 cursor-pointer">
           <Link to="/services/Birds">Birds Netting</Link>
         </li>

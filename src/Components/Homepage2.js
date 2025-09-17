@@ -138,7 +138,7 @@ export default function Homepage() {
       
           {/* Item 4 */}
           <div>
-            <h3 className="text-4xl font-extrabold text-[#e8c34e]">20+</h3>
+            <h3 className="text-4xl font-extrabold text-[#e8c34e]">10+</h3>
             <p className="mt-2 text-lg">Award Winning</p>
           </div>
         </div>
