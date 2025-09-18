@@ -12,7 +12,7 @@ import { Phone } from "lucide-react";
 
 export default function WoodBorerPage() {
   const [formData, setFormData] = useState({
-    name: "",
+    name: "", 
     phone: "",
     pincode: "",
     size: "",

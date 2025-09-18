@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { FaShieldAlt, FaBug, FaLeaf} from "react-icons/fa";
+import { FaShieldAlt, FaBug, FaLeaf, FaQuoteLeft, FaWhatsapp} from "react-icons/fa";
 import cockroach from "../Images/cockroach.png";
 import termite from "../Images/termite.png";
-import { FaQuoteLeft } from "react-icons/fa";
+// import { FaQuoteLeft } from "react-icons/fa";
 import spray from "../Images/spray.jpg";
 import bg3 from "../Images/bg3.png";
 import mosquito from "../Images/mosquito.png";
@@ -132,14 +132,14 @@ export default function Homepage() {
       
           {/* Item 3 */}
           <div>
-            <h3 className="text-4xl font-extrabold text-[#e8c34e]">50+</h3>
+            <h3 className="text-4xl font-extrabold text-[#e8c34e]">20+</h3>
             <p className="mt-2 text-lg">Projects Complete</p>
           </div>
       
           {/* Item 4 */}
           <div>
-            <h3 className="text-4xl font-extrabold text-[#e8c34e]">10+</h3>
-            <p className="mt-2 text-lg">Award Winning</p>
+            <h3 className="text-4xl font-extrabold text-[#e8c34e]">15+</h3>
+            <p className="mt-2 text-lg">Cities</p>
           </div>
         </div>
       </section>
@@ -205,43 +205,6 @@ export default function Homepage() {
         </div>
       </section>
 
-      {/* Technician Hero Image */}
-{/* <section className="bg-white py-12">
-  <div className="container mx-auto px-6 flex justify-center">
-    <img 
-      src={myphoto}  
-      alt="Expert Pest Control Technician" 
-      className="w-[500px] h-[500px] rounded-xl shadow-lg object-cover object-center" 
-    />
-  </div>
-</section> */}
-
-
-{/* Expert Technicians */}
-{/* <section className="py-16 bg-white text-center">
-  <h2 className="text-3xl font-bold text-blue-800">Our Expert Technicians</h2>
-  <p className="mt-4 text-gray-700 max-w-xl mx-auto">
-    We proudly employ over <strong>10+ years experienced technicians</strong> who are certified, background-verified, and equipped with the latest pest control technology.
-  </p>
-</section> */}
-
-{/* Blog Section */}
-{/* <section className="py-16 bg-blue-50 text-center">
-  <h2 className="text-3xl font-bold text-blue-700">Latest Blogs</h2>
-  <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 container mx-auto px-6">
-    {[
-      { title: "Top 5 Signs of a Termite Infestation", summary: "Don’t ignore these common indicators in your home.", link: "/blog/termite-signs" },
-      { title: "How to Prevent Cockroach Breeding", summary: "Easy home remedies and professional tips.", link: "/blog/cockroach-prevention" },
-      { title: "Is Mosquito Fogging Safe?", summary: "Understand safety and effectiveness of fogging treatments.", link: "/blog/mosquito-fogging" },
-    ].map((blog, idx) => (
-      <div key={idx} className="bg-white p-6 rounded-lg shadow-md text-left hover:shadow-lg transition-shadow">
-        <h3 className="font-bold text-lg text-blue-900">{blog.title}</h3>
-        <p className="text-gray-700 mt-2">{blog.summary}</p>
-        <Link to={blog.link} className="text-blue-600 font-semibold mt-3 inline-block">Read More →</Link>
-      </div>
-    ))}
-  </div>
-</section> */}
 
 {/* Technicians + Blogs Side-by-Side Section */}
 <section className="py-16 bg-green-100">
@@ -362,6 +325,18 @@ export default function Homepage() {
       </div>
 
     </section>
+
+       {/* ✅ WhatsApp Floating Button */}
+      <a
+        href="https://wa.me/918707727951" 
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-10 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300 z-50"
+      >
+        <FaWhatsapp size={28} />
+     
+      </a>
+     
     </div>
   );
 }
