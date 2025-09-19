@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, useSpring, useScroll } from "framer-motion";
 
-const logo = require("../Images/logo.jpg");
+const logo = require("../Images/logo.jpeg");
 
 export default function Navbar() {
   const [servicesDropdown, setServicesDropdown] = useState(false);

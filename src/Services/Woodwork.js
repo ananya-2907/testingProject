@@ -151,7 +151,7 @@ export default function WoodBorerPage() {
           </div>
 
           {/* Booking Form (unchanged) */}
-          <div className="lg:w-1/3 bg-gray-50 p-6 relative top-20 rounded shadow-[0_4px_20px_rgba(34,197,94,0.4)] border h-fit">
+            <div className="lg:w-1/3 relative top-10 h-fit bg-gray-50 p-6 rounded shadow-[0_4px_20px_rgba(34,197,94,0.4)] border mt-0 lg:mt-0">
             <h2 className="text-2xl font-semibold mb-4">Booking Form</h2>
             <form ref={form} onSubmit={handleSubmit} className="space-y-4">
               <input

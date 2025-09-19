@@ -54,8 +54,8 @@ export default function BedBugControlPage() {
 
   return (
     <>
-       <Navbar />
-   <div className="relative flex flex-col lg:flex-row  py-12 lg:py-20 max-w-7xl mx-auto">
+       <Navbar /> 
+   <div className="relative flex flex-col lg:flex-row p-6 py-16 lg:py-24 max-w-7xl mx-auto">
 
   {/* Background image with opacity */}
   <div
@@ -169,7 +169,7 @@ export default function BedBugControlPage() {
     </div>
 
     {/* Booking Form */}
-    <div className="lg:w-1/3 relative mb-0 top-20 h-fit bg-gray-50 p-6 rounded shadow-[0_4px_20px_rgba(34,197,94,0.6)] border">
+    <div className="lg:w-1/3 relative mb-0 top-10 h-fit bg-gray-50 p-6 rounded shadow-[0_4px_20px_rgba(34,197,94,0.6)]  mt-0 lg:mt-0 border">
       <h2 className="text-2xl font-semibold mb-4">Booking Form</h2>
       <form ref={form} onSubmit={handleSubmit} className="space-y-4">
         <input

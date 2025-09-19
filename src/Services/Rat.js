@@ -73,7 +73,7 @@ export default function RatControlPage() {
           <div className="lg:w-2/3 lg:pr-8 text-gray-600 ">
             <header className="mb-6">
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-4 sm:mb-0 text-green-800">
-                Rat & Rodent Control - Patel Bros
+                Rat & Rodent Control
               </h1>
               <div class="w-1/6 border-b-4 mt-6 mb-5 border-orange-700"></div>
               <p className="mt-3 text-gray-600 ">
@@ -160,7 +160,7 @@ export default function RatControlPage() {
           </div>
 
           {/* Booking Form (Unchanged) */}
-          <div className="lg:w-1/3 relative top-20 h-fit bg-gray-50 p-6 rounded shadow-[0_4px_20px_rgba(34,197,94,0.4)] border mt-8 lg:mt-0">
+          <div className="lg:w-1/3 relative top-10 h-fit bg-gray-50 p-6 rounded shadow-[0_4px_20px_rgba(34,197,94,0.4)] border mt-0 lg:mt-0">
             <h2 className="text-2xl font-semibold mb-4">Booking Form</h2>
             <form ref={form} onSubmit={handleSubmit} className="space-y-4">
               <input

@@ -166,7 +166,7 @@ export default function FlyingPage() {
           </div>
 
           {/* Booking Form (Unchanged) */}
-          <div className="lg:w-1/3 relative top-20 h-fit bg-gray-50 p-6 rounded shadow-[0_4px_20px_rgba(34,197,94,0.4)] border">
+          <div className="lg:w-1/3 relative top-10 h-fit bg-gray-50 p-6 rounded shadow-[0_4px_20px_rgba(34,197,94,0.4)] border  mt-0 lg:mt-0">
             <h2 className="text-2xl font-semibold mb-4">Booking Form</h2>
             <form ref={form} onSubmit={handleSubmit} className="space-y-4">
               <input
@@ -235,20 +235,18 @@ export default function FlyingPage() {
       </div>
 
       
-      {/* call us */}
-      
-    <div className="bg-gradient-to-r from-green-700 via-green-900 to-green-900 py-4 sm:py-6">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h2 className="text-[#e8c34e] font-extrabold text-base sm:text-lg md:text-xl lg:text-2xl tracking-wide flex flex-col sm:flex-row items-center justify-center text-center">
-      <span>FOR FLYING INSECTS TREATMENT CALL AT :</span>
-      <span className="mt-2 sm:mt-0 sm:ml-3 flex items-center">
-        8707727951
-        <Phone className="w-5 h-5 sm:w-6 sm:h-6 ml-2 inline-block text-[#e8c34e]" />
-      </span>
-    </h2>
-  </div>
-</div>
-
+   {/* call us */}
+   <div className="bg-gradient-to-r from-green-700 via-green-900 to-green-900 py-4 sm:py-6">
+     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+       <h2 className="text-[#e8c34e] font-extrabold text-base sm:text-lg md:text-xl lg:text-2xl tracking-wide flex flex-col sm:flex-row items-center justify-center text-center">
+         <span>FOR FLYING INSECTS TREATMENT CALL AT :</span>
+         <span className="mt-2 sm:mt-0 sm:ml-3 flex items-center">
+           8707727951
+           <Phone className="w-5 h-5 sm:w-6 sm:h-6 ml-2 inline-block text-[#e8c34e]" />
+         </span>
+       </h2>
+     </div>
+   </div>
 
       {/* why us */}
       
