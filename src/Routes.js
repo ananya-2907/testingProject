@@ -23,8 +23,6 @@ import MosquitoBlog from './Blog/Mosquitoblog';
 import Rat from './Services/Rat';
 import Flying from './Services/Flying';
 import Birds from './Services/Birds';
-// import Offer from './Components/Offer/Offerpage';
-// import Offervisual from './Components/Offer/Offervisual';
 import Blogfullpage from './Blog/Blogfullpage';
 import FeedbackPage from './Feedback';
 function Routess() {
@@ -43,9 +41,6 @@ function Routess() {
         <Route path="/services/wood-borer" element={<Homepage />} />
         <Route path="/services/rodent-control" element={<Homepage />} />
         <Route path="/about_us" element={<AboutUs />} />
-        {/* <Route path="/offer" element={<Offer />} />
-        <Route path="/offer/visual" element={<Offervisual/>} /> */}
-        {/* <Route path="/about_us" element={<AboutUs />} /> */}
         <Route path="/contactus" element={<Contactus />} />
         <Route path="/Services/Mosquito" element={<Mosquito />} />
         <Route path="/Services/Bedbug" element={<Bedbug />} />
