@@ -1,0 +1,108 @@
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import Footer from "./Footer";
+import Navbar from './Homepage';
+import contactme from "../Images/contactme.jpg";
+export default function ContactUs() {
+  return (
+    <>
+    <Navbar />
+
+     <section className=" py-40 mt-16 inset-0 bg-cover bg-center"  style={{ backgroundImage: `url(${contactme})`, opacity:0.6 }} >
+            <div className="container mx-auto px-6 text-center">
+              {/* <h1 className="text-5xl font-extrabold mb-4">About Us</h1>
+              <p className="text-lg max-w-2xl text-gray-200 mx-auto">
+                Trusted, Eco-Friendly, and Professional Pest Control Solutions at Your Service.
+              </p> */}
+            </div>
+          </section>
+
+    <div className="bg-gray-50 text-gray-800 py-20 px-6">
+      {/* Contact Header */}
+      <div className="text-center mb-12">
+        <h1 className="text-2xl font-bold mb-2">For Booking, Complaints & Inquiries</h1>
+        {/* <p className="text-lg">For Booking, Complaints & Inquiries</p> */}
+      </div>
+
+      {/* Contact Details */}
+      <div className="grid grid-cols-1 md:grid-cols-3  text-center mb-12">
+        <div className="bg-none p-5 text-center ">
+          <FaPhoneAlt className="text-3xl mx-auto text-blue-600 mb-2" />
+          <h3 className="font-bold">Customer Care</h3>
+          <p className="text-lg mt-1">📞 8707727951</p>
+        </div>
+        <div className="bg-none p-5 text-center">
+          <FaEnvelope className="text-3xl mx-auto text-red-500 mb-2" />
+          <h3 className="font-bold">Email Us at</h3>
+          <p className="text-sm">patelbrospest@gmail.com</p>
+     
+        </div>
+        <div className="bg-none p-5 text-center">
+          <FaMapMarkerAlt className="text-3xl mx-auto text-green-500 mb-2" />
+          <h3 className="font-bold">Registered Head Office</h3>
+          <p className="text-sm mt-1">
+            Patelbros Services PVT LTD. <br />
+           Suti mill power house gwalior road, jhansi 284001.
+          </p>
+        </div>
+      </div>
+
+      {/* Contact Form */}
+      <div className="max-w-3xl mx-auto shadow-[0_4px_20px_rgba(34,197,94,0.4)] bg-white p-8 rounded-lg">
+        <h2 className="text-2xl font-bold mb-6 text-center">I need a call</h2>
+        <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <input type="text" placeholder="Name *" className="border px-4 py-2 rounded" required />
+          <input type="text" placeholder="Mobile Number *" className="border px-4 py-2 rounded" required />
+          <input type="text" placeholder="Pincode *" className="border px-4 py-2 rounded" required />
+          <input type="text" placeholder="Interested in ? *" className="border px-4 py-2 rounded" required />
+          <textarea placeholder="Remarks *" className="border px-4 py-2 rounded col-span-1 md:col-span-2" rows="4" required></textarea>
+          <button type="submit" className="bg-blue-600 text-white py-2 rounded col-span-1 md:col-span-2 hover:bg-blue-700">
+            Submit
+          </button>
+        </form>
+      </div>
+
+      {/* Footer Links */}
+      {/* <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-center md:text-left">
+        <div>
+          <h4 className="font-bold mb-2">Our Services</h4>
+          <ul className="space-y-1">
+            <li>Pest Control</li>
+            <li>Bird Netting</li>
+            <li>Cockroach Control</li>
+            <li>Termite Control</li>
+            <li>Bedbug Control</li>
+            <li>Mosquito Control</li>
+            <li>Wood Borer</li>
+            <li>Rodent Control</li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="font-bold mb-2">Other Links</h4>
+          <ul className="space-y-1">
+            <li>Offers</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Careers</li>
+            <li>FAQs</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div>
+          <h4 className="font-bold mb-2">Follow Us On</h4>
+          <ul className="space-y-1">
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>YouTube</li>
+          </ul>
+          <p className="mt-4">📞 8828333888</p>
+          <p>📧  patelbrospest@gmail.com</p>
+        </div>
+      </div> */}
+
+     
+    </div>
+    <Footer/>
+    </>
+  );
+}
